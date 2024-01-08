@@ -1,3 +1,77 @@
 /* Main css file but you can create more if you need */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=PT+Serif:ital,wght@0,700;1,400&display=swap");
 
+/* Element styles that will be in each page */
+
+@media only screen and (max-width: 640px) {
+  .navigation {
+    padding: 32px 32px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .navigation {
+    padding: 32px 128px;
+    /* justify-content: space-around; */
+  }
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+  padding: 0 0;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  /* flex-shrink: 0; */
+  justify-content: space-between;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #dedede;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.socialmedia-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.modes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.button {
+  font-family: Inter;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+}
+
+.light-mode-btn {
+  background-color: white;
+  padding: 4px 10px;
+  color: #3d3741;
+}
+
+.dark-mode-btn {
+  background-color: #94aede;
+  padding: 4px 10px;
+  color: #3d3741;
+}
