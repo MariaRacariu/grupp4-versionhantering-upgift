@@ -1,0 +1,1 @@
+// Javascript for displaying the map from the weather api
