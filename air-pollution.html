@@ -9,7 +9,7 @@ the weather data. -->
     <title>maps</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="style/style.css">
-    <script src="script/modules/air-polution.js" defer></script>
+    <script src="script/air-pollution.js" defer></script>
   </head>
   <body>
     <div class="page-container">
@@ -17,11 +17,30 @@ the weather data. -->
         <img src="assets/logo.svg" alt="logo" />
         <a href="#"><img src="assets/nav.svg" alt="navbar" /></a>
       </nav>
-      <section class="section-about"></section>
+      <section class="section-home display-flex">
+        <form class="searchCity_form display-flex">
+          <input
+            type="text"
+            class="searchCity_input"
+            id="searchCityP_input"
+            autocomplete="false"
+            required
+            placeholder="Search for city"
+            clearable
+          />
+          <button class="searchBtn btn" id="searchCityP_button" type="button">Search</button>
+        </form>
+        <div class="contentDataHome display-flex">
+          <div class="contentHeader display-flex" id="contentDataHome">
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="footer-content">
-        <div class="footer-logo"><img src="assets/logo.svg" alt="logo" /></div>
+        <div class="footer-logo">
+          <img src="assets/logo.svg" alt="logo" />
+        </div>
         <div class="socialmedia-links">
           <a href="#"
             ><img src="assets/instagramdark.svg" alt="instagramlogo"
@@ -30,8 +49,13 @@ the weather data. -->
           <a href="#"><img src="assets/twitterdark.svg" alt="twitter" /></a>
         </div>
         <div class="modes">
-          <button class="light-mode-btn button">Light Mode</button>
-          <button class="dark-mode-btn button">Dark Mode</button>
+          <button
+            class="dark-mode-btn button"
+            name="switch"
+            id="toggle-theme-button"
+          >
+            Dark Mode
+          </button>
         </div>
       </div>
     </footer>

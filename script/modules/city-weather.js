@@ -18,7 +18,9 @@ export function displayData(fetchdata) {
 }
 
 export function removePrevSearchResult() {
-    const mainResultContainer = document.querySelector('.contentHeader');
+    // dont use a class, create an id
+    // const mainResultContainer = document.querySelector('.contentHeader');
+    const mainResultContainer = document.querySelector('#contentHeader');
     mainResultContainer.innerHTML = '';
 }
 

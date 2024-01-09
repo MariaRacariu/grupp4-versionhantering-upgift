@@ -5,9 +5,10 @@ import { displayData } from "./modules/city-weather.js";
 import { removePrevSearchResult } from "./modules/city-weather.js";
 import { errorHandler } from "./modules/city-weather.js";
 
-const form = document.querySelector('#searchCity_form')
-
-form.addEventListener('submit', searchHandler)
+// cannot use this name, this name is a global name, it will affect the tags form in HTML in every file on the page
+// const form = document.querySelector('#searchCity_form')
+// form.addEventListener('submit', searchHandler);
+const searchForm = document.quearySelector('#searchCity_form').addEventListener('submit', searchHandler);
 
 async function searchHandler(event) {
   event.preventDefault();
