@@ -18,7 +18,33 @@ the city searched by the user -->
         <img id="logo" src="assets/logo.svg" alt="logo" />
         <a href="#"><img id="navbars" src="assets/nav.svg" alt="navbar" /></a>
       </nav>
-      <section class="section-about"></section>
+      <section class="section-home display-flex">
+        <form id="searchCity_form" class="display-flex">
+          <input
+            type="text"
+            id="searchCity_input"
+            autocomplete="false"
+            required
+            placeholder="Search for city"
+            clearable
+          />
+          <button class="searchBtn btn" type="submit">Search</button>
+        </form>
+        <div class="contentHome display-flex">
+          <div class="contentHeader">
+            <h3 id="dataCity">Malmö</h3>
+            <h2 id="dataTemparature">-5°</h2>
+            <img id="dataIcon" src="assets/cloud-moon-rain.svg" alt="icon" />
+          </div>
+          <div class="dataContent">
+            <p><strong>Lorem:</strong>Lorem ipsum</p>
+            <p><strong>Lorem:</strong>Lorem ipsum</p>
+            <p><strong>Lorem:</strong>Lorem ipsum</p>
+            <p><strong>Lorem:</strong>Lorem ipsum</p>
+            <p><strong>Lorem:</strong>Lorem ipsum</p>
+          </div>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <div class="footer-content">

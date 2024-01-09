@@ -1,14 +1,30 @@
 .page-container {
-    background-color: #3d3741;
+  background-color: #3d3741;
+  color: white;
 }
 
 .light-mode-btn {
-    background-color: white;
-    padding: 4px 10px;
-    color: #3d3741;
+  background-color: white;
+  padding: 4px 10px;
+  color: #3d3741;
 }
 
 .light-mode-btn:hover {
-    background-color: #9f9f9f;
-    color: white;
+  background-color: #9f9f9f;
+  color: white;
+}
+
+.searchBtn {
+  background-color: white;
+  color: #3d3741;
+  height: 2.1875rem;
+  padding: 0.5rem 1.0625rem 0.5rem 1.125rem;
+  border-radius: 3.125rem;
+  border: none;
+  font-size: 0.9rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
 }

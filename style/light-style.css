@@ -1,14 +1,28 @@
 .page-container {
-    background-color: white
+  background-color: white;
 }
 
 .dark-mode-btn {
-    background-color: #94aede;
-    padding: 4px 10px;
-    color: #3d3741;
+  background-color: #94aede;
+  padding: 4px 10px;
+  color: #3d3741;
 }
 
 .dark-mode-btn:hover {
-    background-color: #211529;
-    color: white;
+  background-color: #211529;
+  color: white;
+}
+
+.searchBtn {
+  background-color: #3d3741;
+  color: white;
+  height: 2.1875rem;
+  padding: 0.5rem 1.0625rem 0.5rem 1.125rem;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.7px;
 }
