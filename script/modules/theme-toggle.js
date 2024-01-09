@@ -6,12 +6,16 @@ var themeButton = document.getElementById('toggle-theme-button');
 //Created light theme and dark theme function to make easier call out
 function lightTheme() {
     theme.setAttribute('href', 'style/light-style.css');
-    themeButton.innerHTML = "Switch to dark theme";
+    themeButton.innerHTML = "Dark theme";
+    themeButton.classList.remove('light-mode-btn');
+    themeButton.classList.add('dark-mode-btn');
 }
 
 function darkTheme() {
     theme.setAttribute('href', 'style/dark-style.css');
-    themeButton.innerHTML = "Switch to light theme";
+    themeButton.innerHTML = "Light theme";
+    themeButton.classList.remove('dark-mode-btn');
+    themeButton.classList.add('light-mode-btn');
 }
 
 //Checks if localStorage is saved
