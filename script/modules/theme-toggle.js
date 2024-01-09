@@ -1,6 +1,8 @@
 //Create a variable which gets the button id
 //Added code to change innerHTML button depending on the theme
-var themeSelector = "light";
+
+//Set theme
+
 var theme = document.getElementById("toggle-theme");
 var themeButton = document.getElementById("toggle-theme-button");
 
@@ -10,7 +12,7 @@ function lightTheme() {
   themeButton.innerHTML = "Dark theme";
   themeButton.classList.remove("light-mode-btn");
   themeButton.classList.add("dark-mode-btn");
-  themeSelector = "light";
+  adjustingImg();
 }
 
 function darkTheme() {
@@ -18,7 +20,7 @@ function darkTheme() {
   themeButton.innerHTML = "Light theme";
   themeButton.classList.remove("dark-mode-btn");
   themeButton.classList.add("light-mode-btn");
-  themeSelector = "dark";
+  adjustingImg();
 }
 
 //Checks if localStorage is saved
@@ -47,13 +49,31 @@ export function toggleTheme() {
 }
 
 function adjustingImg() {
+  let footerLogo = document.querySelector("#footerLogo");
+  let instagramLogo = document.querySelector("#instagramLogo");
+  let twitterLogo = document.querySelector("#twitterLogo");
+  let tiktokLogo = document.querySelector("#tiktokLogo");
+
   let navImg = document.querySelector("#navbars");
   let logoImg = document.querySelector("#logo");
-  if (themeSelector === "light") {
+
+  console.log(localStorage.getItem("theme"));
+
+  if (localStorage.getItem("theme") === "light-style") {
     navImg.src = "assets/nav.svg";
     logoImg.src = "assets/logo.svg";
-  } else if (themeSelector === "dark") {
+
+    footerLogo.src = "assets/logo.svg";
+    instagramLogo.src = "assets/instagramdark.svg";
+    twitterLogo.src = "assets/twitterdark.svg";
+    tiktokLogo.src = "assets/tiktokdark.svg";
+  } else if (localStorage.getItem("theme") === "dark-style") {
     navImg.src = "assets/navVit.svg";
     logoImg.src = "assets/logoVit.svg";
+
+    footerLogo.src = "assets/logoVit.svg";
+    instagramLogo.src = "assets/instagram.svg";
+    twitterLogo.src = "assets/twitter.svg";
+    tiktokLogo.src = "assets/tiktok.svg";
   }
 }
