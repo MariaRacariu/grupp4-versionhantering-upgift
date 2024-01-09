@@ -22,9 +22,12 @@ body {
 
 @media only screen and (min-width: 640px) {
   .page-container {
-    max-width: 1280px;
+    width: 100%;
   }
 
+  .navigation {
+    max-width: 1280px;
+  }
   .footer-content {
     width: 100%;
     max-width: 1280px;
@@ -43,6 +46,8 @@ body {
   border: none;
   cursor: pointer;
 }
+
+
 
 .footer-content {
   height: 86px;
@@ -84,26 +89,4 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}
-
-.light-mode-btn {
-  background-color: white;
-  padding: 4px 10px;
-  color: #3d3741;
-}
-
-.light-mode-btn:hover {
-  background-color: #9f9f9f;
-  color: white;
-}
-
-.dark-mode-btn {
-  background-color: #94aede;
-  padding: 4px 10px;
-  color: #3d3741;
-}
-
-.dark-mode-btn:hover {
-  background-color: #211529;
-  color: white;
 }

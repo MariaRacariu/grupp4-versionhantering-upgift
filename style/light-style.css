@@ -1,0 +1,14 @@
+.page-container {
+    background-color: white
+}
+
+.dark-mode-btn {
+    background-color: #94aede;
+    padding: 4px 10px;
+    color: #3d3741;
+}
+
+.dark-mode-btn:hover {
+    background-color: #211529;
+    color: white;
+}
