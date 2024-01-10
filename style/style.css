@@ -3,105 +3,108 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=PT+Serif:ital,wght@0,700;1,400&display=swap");
 
 body {
-  padding: 0 0;
-  margin: 0;
+	padding: 0 0;
+	margin: 0;
 }
 
 /* General classes*/
 .display-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .hide {
-  display: none;
+	display: none;
 }
 
 /* the whole page in div */
 .page-container {
-  position: relative;
-  min-height: calc(100vh - 86px);
-  padding: 0 0;
-  margin: 0 auto;
-  font-family: Inter;
-  color: #3d3741;
+	position: relative;
+	min-height: calc(100vh - 86px);
+	padding: 0 0;
+	margin: 0 auto;
+	font-family: Inter;
+	color: #3d3741;
 }
 
 @media only screen and (max-width: 640px) {
-  .footer-content {
-    width: 100%;
-    padding: 0 24px;
-  }
+	.footer-content {
+		width: 100%;
+		padding: 0 24px;
+	}
 
-  .socialmedia-links {
-    gap: 12px;
-  }
+	.socialmedia-links {
+		gap: 12px;
+	}
+	.section-about {
+		flex-direction: column;
+	}
 }
 
 @media only screen and (min-width: 640px) {
-  .page-container {
-    width: 100%;
-  }
+	.page-container {
+		width: 100%;
+	}
 
-  .navigation {
-    max-width: 1280px;
-  }
+	.navigation {
+		max-width: 1280px;
+	}
 
-  .footer-content {
-    width: 100%;
-    max-width: 1280px;
-    padding: 0 24px;
-  }
+	.footer-content {
+		width: 100%;
+		max-width: 1280px;
+		padding: 0 24px;
+	}
 
-  .socialmedia-links {
-    gap: 24px;
-  }
+	.socialmedia-links {
+		gap: 24px;
+	}
 }
 
 /* /////////////////////////////////////
 Element styles that will be in each page */
 .button {
-  font-family: Inter;
-  font-weight: 600;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
+	font-family: Inter;
+	font-weight: 600;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
 }
 
 .footer-content {
-  height: 86px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  box-sizing: border-box;
+	height: 86px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .navigation {
-  display: flex;
-  margin: auto;
-  align-items: center;
-  padding: 24px 24px;
-  justify-content: space-between;
+	display: flex;
+	margin: auto;
+	align-items: center;
+	padding: 24px 24px;
+	justify-content: space-between;
 }
 
 .footer {
-  width: 100%;
-  height: 86px;
-  box-sizing: border-box;
+	width: 100%;
+	height: 86px;
+	box-sizing: border-box;
 }
 
 .socialmedia-links {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .modes {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
 }
 
 /* /////////////////////////////////////////
@@ -109,42 +112,60 @@ HOME
 */
 
 .section-home {
-  margin-top: 100px;
+	margin-top: 100px;
 }
 
 .contentDataHome {
-  margin-top: 32px;
+	margin-top: 32px;
 }
 
 .searchCity_form {
-  gap: 20px;
+	gap: 20px;
 }
 
 .searchCity_input {
-  height: 1.2rem;
-  padding: 0.8125rem 11.8125rem 0.75rem 1rem;
-  border-radius: 3.125rem;
-  border: 1px solid #9f9f9f;
-  background: #fff;
+	height: 1.2rem;
+	padding: 0.8125rem 11.8125rem 0.75rem 1rem;
+	border-radius: 3.125rem;
+	border: 1px solid #9f9f9f;
+	background: #fff;
 }
 
 .contentHeader h3 {
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin-bottom: 0;
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 0;
 }
 
 .contentHeader h2 {
-  font-size: 7rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  flex-shrink: 0;
+	font-size: 7rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0;
+	flex-shrink: 0;
 }
 
 .dataContent {
-  margin-top: 32px;
+	margin-top: 32px;
+}
+
+/* ABOUT*/
+.section-about {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 24px;
+}
+
+.section-about > img {
+	width: 45%;
+}
+.section-about > div {
+	width: 45%;
+}
+div > h2 {
+	margin-top: 0%;
 }
