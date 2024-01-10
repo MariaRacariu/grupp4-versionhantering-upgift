@@ -27,6 +27,25 @@
   letter-spacing: 0.7px;
 }
 
+.searchBtn:hover {
+  scale: 1.1;
+}
+
 .footer {
   background-color: #dedede;
+}
+
+.nav-menu-list a {
+  color: #3d3741;
+  text-decoration: none;
+}
+
+.nav-menu-list li:hover {
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 640px) {
+  .nav-menu-list {
+    background-color: #94aede;
+  }
 }

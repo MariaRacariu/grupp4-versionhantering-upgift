@@ -7,9 +7,6 @@ body {
   margin: 0;
 }
 
-
-
-
 /* the whole page in div */
 .page-container {
   position: relative;
@@ -44,12 +41,6 @@ ul {
   margin-block-end: 0;
 }
 
-.nav-menu-li a {
-  text-decoration: none;
-  color: #3d3741;
-}
-
-
 @media only screen and (max-width: 640px) {
   .footer-content {
     width: 100%;
@@ -74,7 +65,7 @@ ul {
     margin: 0 auto;
     font-size: 1.5rem;
     font-weight: 600;
-    background-color: #94aede;
+    gap: 20px;
     list-style: none;
     position: fixed;
     top: 0;

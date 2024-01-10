@@ -1,5 +1,5 @@
 .page-container {
-  background-color: #3d3741;
+  background-color: #211529;
   color: white;
 }
 
@@ -29,6 +29,25 @@
   cursor: pointer;
 }
 
+.searchBtn:hover {
+  scale: 1.1;
+}
+
 .footer {
-  background-color: #211529;
+  background-color: #3d3741;
+}
+
+.nav-menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-menu-list li:hover {
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 640px) {
+  .nav-menu-list {
+    background-color: #211529;
+  }
 }
