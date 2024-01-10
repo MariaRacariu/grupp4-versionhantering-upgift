@@ -2,67 +2,82 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>contact</title>
-	</head>
-	<body>
-		<div class="page-container">
-			<nav class="navigation">
-				<img src="assets/logo.svg" alt="logo" />
-				<a href="#"><img src="assets/nav.svg" alt="navbar" /></a>
-			</nav>
-			<section class="section-contact">
-				<h2>Contact</h2>
-				<form>
-					<div>
-						<label for="name">Your name</label> <br />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <nav class="navigation">
+        <img id="logo" class="weather24logo" src="assets/logo.svg" alt="logo" />
+        <a href="#" id="navigationBar"
+          ><img id="navbars" src="assets/nav.svg" alt="navbar"
+        /></a>
+        <ul class="nav-menu-list nav-menu-list-hide">
+          <li>
+            <a href="#" class="menu-hide-icon"
+              ><ion-icon class="icon-color" name="close-outline"></ion-icon
+            ></a>
+          </li>
+          <li class="nav-menu-li"><a href="index.html">Home</a></li>
+          <li class="nav-menu-li">
+            <a href="air-pollution.html">Air Pollution</a>
+          </li>
+          <li class="nav-menu-li"><a href="about.html">About us</a></li>
+          <li class="nav-menu-li"><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <section class="section-contact">
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <label for="name">Your name</label> <br />
 
-						<input type="text" name="name" id="name" placeholder="Name" />
-					</div>
-					<div>
-						<label for="mail">Email address</label><br />
+            <input type="text" name="name" id="name" placeholder="Name" />
+          </div>
+          <div>
+            <label for="mail">Email address</label><br />
 
-						<input
-							type="text"
-							name="mail"
-							id="mail"
-							placeholder="Hello@mail.se"
-						/>
-					</div>
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="Hello@mail.se"
+            />
+          </div>
 
-					<div>
-						<label for="message">Message</label><br />
-						<textarea
-							name="message"
-							id="message"
-							cols="30"
-							rows="5"
-							placeholder="Write your message here"
-						></textarea>
-					</div>
-					<div>
-						<input type="submit" value="Send" />
-					</div>
-				</form>
-			</section>
-		</div>
-		<footer class="footer">
-			<div class="footer-content">
-				<div class="footer-logo"><img src="assets/logo.svg" alt="logo" /></div>
-				<div class="socialmedia-links">
-					<a href="#"
-						><img src="assets/instagramdark.svg" alt="instagramlogo"
-					/></a>
-					<a href="#"><img src="assets/tiktokdark.svg" alt="tiktoklogo" /></a>
-					<a href="#"><img src="assets/twitterdark.svg" alt="twitter" /></a>
-				</div>
-				<div class="modes">
-					<button class="light-mode-btn button">Light Mode</button>
-					<button class="dark-mode-btn button">Dark Mode</button>
-				</div>
-			</div>
-		</footer>
-	</body>
+          <div>
+            <label for="message">Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="5"
+              placeholder="Write your message here"
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo"><img src="assets/logo.svg" alt="logo" /></div>
+        <div class="socialmedia-links">
+          <a href="#"
+            ><img src="assets/instagramdark.svg" alt="instagramlogo"
+          /></a>
+          <a href="#"><img src="assets/tiktokdark.svg" alt="tiktoklogo" /></a>
+          <a href="#"><img src="assets/twitterdark.svg" alt="twitter" /></a>
+        </div>
+        <div class="modes">
+          <button class="light-mode-btn button">Light Mode</button>
+          <button class="dark-mode-btn button">Dark Mode</button>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

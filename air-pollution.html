@@ -7,15 +7,30 @@ the weather data. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>maps</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="style/style.css" />
     <script src="script/air-pollution.js" defer></script>
   </head>
   <body>
     <div class="page-container">
       <nav class="navigation">
-        <img src="assets/logo.svg" alt="logo" />
-        <a href="#"><img src="assets/nav.svg" alt="navbar" /></a>
+        <img id="logo" class="weather24logo" src="assets/logo.svg" alt="logo" />
+        <a href="#" id="navigationBar"
+          ><img id="navbars" src="assets/nav.svg" alt="navbar"
+        /></a>
+        <ul class="nav-menu-list nav-menu-list-hide">
+          <li>
+            <a href="#" class="menu-hide-icon"
+              ><ion-icon class="icon-color" name="close-outline"></ion-icon
+            ></a>
+          </li>
+          <li class="nav-menu-li"><a href="index.html">Home</a></li>
+          <li class="nav-menu-li">
+            <a href="air-pollution.html">Air Pollution</a>
+          </li>
+          <li class="nav-menu-li"><a href="about.html">About us</a></li>
+          <li class="nav-menu-li"><a href="contact.html">Contact us</a></li>
+        </ul>
       </nav>
       <section class="section-home display-flex">
         <form class="searchCity_form display-flex">
@@ -28,11 +43,12 @@ the weather data. -->
             placeholder="Search for city"
             clearable
           />
-          <button class="searchBtn btn" id="searchCityP_button" type="button">Search</button>
+          <button class="searchBtn btn" id="searchCityP_button" type="button">
+            Search
+          </button>
         </form>
         <div class="contentDataHome display-flex">
-          <div class="contentHeader display-flex" id="contentDataHome">
-          </div>
+          <div class="contentHeader display-flex" id="contentDataHome"></div>
         </div>
       </section>
     </div>
