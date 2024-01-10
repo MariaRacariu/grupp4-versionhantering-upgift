@@ -41,9 +41,11 @@
   color: white;
   text-decoration: none;
 }
+.nav-menu-li.active a {
+  background: rgba(255, 255, 255, 16%);
+}
 
-.nav-menu-list li:hover a {
-  color: #fff;
+.nav-menu-li:hover a {
   background: rgba(255, 255, 255, 16%);
 }
 

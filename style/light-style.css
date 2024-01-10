@@ -40,8 +40,16 @@
   text-decoration: none;
 }
 
-.nav-menu-list li:hover a {
+/* .nav-menu-list li:hover a {
   color: #211529;
+  background: rgba(0, 0, 0, 8%);
+} */
+
+.nav-menu-li.active a {
+  background: rgba(0, 0, 0, 8%);
+}
+
+.nav-menu-li:hover a {
   background: rgba(0, 0, 0, 8%);
 }
 
