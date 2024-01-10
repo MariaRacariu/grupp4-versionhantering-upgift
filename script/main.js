@@ -18,9 +18,3 @@ async function searchHandler(event) {
   const searchInput = document.querySelector("#searchCity_input").value;
   await weatherFetch(searchInput).then(displayData).catch(error);
 }
-// Add eventlistener to button in footer to run function
-const toggleThemeBtn = document
-  .querySelector("#toggle-theme-button")
-  .addEventListener("click", toggleTheme);
-
-

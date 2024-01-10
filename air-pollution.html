@@ -6,11 +6,13 @@ the weather data. -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>maps</title>
+    <title>Air Pollution</title>
     <link rel="shortcut icon" href="#" type="image/x-icon" />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/light-style.css" id="toggle-theme" />
     <script src="script/air-pollution.js" defer></script>
-    <script type="module" src="script/navigation.js"></script>
+    <script src="script/navigation.js" defer></script>
+   
   </head>
   <body>
     <div class="page-container">
@@ -25,8 +27,8 @@ the weather data. -->
               ><ion-icon class="icon-color" name="close-outline"></ion-icon
             ></a>
           </li>
-          <li class="nav-menu-li"><a href="index.html">Home</a></li>
-          <li class="nav-menu-li active">
+          <li class="nav-menu-li active"><a href="index.html">Home</a></li>
+          <li class="nav-menu-li">
             <a href="air-pollution.html">Air Pollution</a>
           </li>
           <li class="nav-menu-li"><a href="about.html">About us</a></li>
@@ -56,14 +58,21 @@ the weather data. -->
     <footer class="footer">
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="assets/logo.svg" alt="logo" />
+          <img id="footerLogo" src="assets/logo.svg" alt="logo" />
         </div>
         <div class="socialmedia-links">
           <a href="#"
-            ><img src="assets/instagramdark.svg" alt="instagramlogo"
+            ><img
+              id="instagramLogo"
+              src="assets/instagramdark.svg"
+              alt="instagramlogo"
           /></a>
-          <a href="#"><img src="assets/tiktokdark.svg" alt="tiktoklogo" /></a>
-          <a href="#"><img src="assets/twitterdark.svg" alt="twitter" /></a>
+          <a href="#"
+            ><img id="tiktokLogo" src="assets/tiktokdark.svg" alt="tiktoklogo"
+          /></a>
+          <a href="#"
+            ><img id="twitterLogo" src="assets/twitterdark.svg" alt="twitter"
+          /></a>
         </div>
         <div class="modes">
           <button
@@ -76,7 +85,7 @@ the weather data. -->
         </div>
       </div>
     </footer>
-
+    <script src="script//modules/theme-toggle.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"

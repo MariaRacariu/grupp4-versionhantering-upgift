@@ -2,6 +2,8 @@
 //Added code to change innerHTML button depending on the theme
 
 //Set theme
+// Add eventlistener to button in footer to run function
+const toggleThemeBtn = document.querySelector("#toggle-theme-button").addEventListener("click", toggleTheme);
 
 var theme = document.getElementById("toggle-theme");
 var themeButton = document.getElementById("toggle-theme-button");
@@ -32,7 +34,7 @@ if (localStorage.getItem("theme") === "light-style") {
   lightTheme();
 }
 
-export function toggleTheme() {
+function toggleTheme() {
   //If light theme is enabled then switch to dark theme
   if (theme.getAttribute("href") == "style/light-style.css") {
     darkTheme();
