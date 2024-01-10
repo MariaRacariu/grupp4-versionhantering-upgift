@@ -42,8 +42,9 @@
   text-decoration: none;
 }
 
-.nav-menu-list li:hover {
-  scale: 1.1;
+.nav-menu-list li:hover a {
+  color: #fff;
+  background: rgba(255, 255, 255, 16%);
 }
 
 @media only screen and (max-width: 640px) {

@@ -1,9 +1,9 @@
 // Import files and run functions
-import { toggleTheme } from "./modules/theme-toggle.js";
+// import { toggleTheme } from "./modules/theme-toggle.js";
 import { weatherFetch } from "./modules/city-weather.js";
 import { displayData } from "./modules/city-weather.js";
 import { removePrevSearchResult } from "./modules/city-weather.js";
-import { errorHandler } from "./modules/city-weather.js";
+// import { errorHandler } from "./modules/city-weather.js";
 
 // cannot use this name, this name is a global name, it will affect the tags form in HTML in every file on the page
 // const form = document.querySelector('#searchCity_form')
