@@ -1,18 +1,19 @@
 // Javascript for searching the weather by city name and displaying info.
+const errorMsgEl = document.querySelector('#errorMsg')
+
 export async function weatherFetch(country) {
-    const apikey = '0c3cc91b87e044a264bca95e28a9e445'
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apikey}&units=metric`
-    const response = await fetch(url)
+
+    const apikey = '0c3cc91b87e044a264bca95e28a9e445';
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apikey}&units=metric`;
+    const response = await fetch(url);
     if (response.ok) {
-        const data = await response.json()
+        errorMsgEl.innerHTML = "";
+        const data = await response.json();
         return data;
     }
     else if (response.status === 404) throw 'not found'
 
     else throw 'error'
-
-
-
 }
 export function displayData(fetchdata) {
     const cityEl = document.querySelector('#dataCity');
@@ -26,7 +27,7 @@ export function errorHandler(error) {
     if (error === 'not found') message = 'City not found'
     else message = 'something went wrong...try again later'
 
-    const errorMsgEl = document.querySelector('#errorMsg')
+
 
     errorMsgEl.innerText = message;
 
