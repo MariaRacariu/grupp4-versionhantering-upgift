@@ -8,12 +8,12 @@ export async function weatherFetch(country) {
     console.log(data);
     return data;
 }
-
+// Javascript Math.round() to round up the weather / tofixed()
 export function displayData(fetchdata) {
-    const cityEl = document.querySelector('#dataCity')
-    let tempratureEl = document.querySelector('#dataTemparature')
-    cityEl.innerText = fetchdata.name
-    tempratureEl.innerText = fetchdata.main.temp
+    const cityEl = document.querySelector('#dataCity');
+    let tempratureEl = document.querySelector('#dataTemparature');
+    cityEl.innerText = fetchdata.name;
+    tempratureEl.innerHTML = `${fetchdata.main.temp}&#8451`;
 
 }
 
