@@ -8,6 +8,15 @@ const toggleThemeBtn = document.querySelector("#toggle-theme-button").addEventLi
 const theme = document.getElementById("toggle-theme");
 const themeButton = document.getElementById("toggle-theme-button");
 
+//Checks if localStorage is saved
+if (localStorage.getItem("theme") === "light-style") {
+  lightTheme();
+} else if (localStorage.getItem("theme") === "dark-style") {
+  darkTheme();
+} else {
+  lightTheme();
+}
+
 //Created light theme and dark theme function to make easier call out
 function lightTheme() {
   theme.setAttribute("href", "style/light-style.css");
@@ -25,14 +34,7 @@ function darkTheme() {
   adjustingImg();
 }
 
-//Checks if localStorage is saved
-if (localStorage.getItem("theme") === "light-style") {
-  lightTheme();
-} else if (localStorage.getItem("theme") === "dark-style") {
-  darkTheme();
-} else {
-  lightTheme();
-}
+
 
 function toggleTheme() {
   //If light theme is enabled then switch to dark theme

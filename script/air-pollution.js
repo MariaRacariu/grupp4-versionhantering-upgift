@@ -1,7 +1,6 @@
 // This will allow the user to search for a city then you will need
 // to display the data about the current weather of that city
 
-// Geocoding
 const searchButton = document
   .querySelector("#searchCityP_button")
   .addEventListener("click", getCityName);
@@ -9,10 +8,7 @@ const searchButton = document
 const key = "d0c746aff0e36b543db10e38ed3e3b6a";
 const contentDataHome = document.querySelector("#contentDataHome");
 
-
-
-
-
+// Geocoding
 async function getCityName() {
   while (contentDataHome.firstChild) {
     contentDataHome.removeChild(contentDataHome.firstChild);
