@@ -10,15 +10,12 @@ export async function weatherFetch(country) {
     else if (response.status === 404) throw 'not found'
 
     else throw 'error'
-
-
-
 }
 export function displayData(fetchdata) {
     const cityEl = document.querySelector('#dataCity');
     let tempratureEl = document.querySelector('#dataTemparature');
     cityEl.innerText = fetchdata.name;
-    tempratureEl.innerHTML = `${fetchdata.main.temp.toFixed()}.&#8451`;
+    tempratureEl.innerHTML = `${fetchdata.main.temp.toFixed()} &#8451`;
 
 }
 export function errorHandler(error) {
