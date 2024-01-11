@@ -9,7 +9,6 @@ export async function weatherFetch(country) {
     if (response.ok) {
         errorMsgEl.innerHTML = "";
         const data = await response.json();
-        console.log(data);
         return data;
     }
     else if (response.status === 404) throw 'not found'
