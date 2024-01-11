@@ -5,8 +5,8 @@
 // Add eventlistener to button in footer to run function
 const toggleThemeBtn = document.querySelector("#toggle-theme-button").addEventListener("click", toggleTheme);
 
-var theme = document.getElementById("toggle-theme");
-var themeButton = document.getElementById("toggle-theme-button");
+const theme = document.getElementById("toggle-theme");
+const themeButton = document.getElementById("toggle-theme-button");
 
 //Created light theme and dark theme function to make easier call out
 function lightTheme() {
