@@ -33,18 +33,25 @@
           </li>
         </ul>
       </nav>
-      <section class="section-contact">
+      <section class="section-contact display-flex">
         <h2>Contact</h2>
-        <form>
-          <div>
-            <label for="name">Your name</label> <br />
-
-            <input type="text" name="name" id="name" placeholder="Name" />
-          </div>
-          <div>
-            <label for="mail">Email address</label><br />
+        <form class="form-contact">
+          <div class="form-input">
+            <label class="labelForName" for="name">Your name</label>
 
             <input
+              class="input-name"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-input">
+            <label for="mail">Email address</label>
+
+            <input
+              class="input-mail"
               type="text"
               name="mail"
               id="mail"
@@ -52,9 +59,10 @@
             />
           </div>
 
-          <div>
-            <label for="message">Message</label><br />
+          <div class="form-input_message">
+            <label for="message">Message</label>
             <textarea
+              class="message-text"
               name="message"
               id="message"
               cols="30"
@@ -62,8 +70,8 @@
               placeholder="Write your message here"
             ></textarea>
           </div>
-          <div>
-            <input type="submit" value="Send" />
+          <div class="display-flex">
+            <input class="searchBtn btn" type="submit" value="Send" />
           </div>
         </form>
       </section>

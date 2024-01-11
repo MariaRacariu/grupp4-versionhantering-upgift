@@ -2,93 +2,99 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <title>About</title>
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/light-style.css" id="toggle-theme" />
-    <script src="script/navigation.js" defer></script>
-  </head>
-  <body>
-    <div class="page-container">
-      <nav class="navigation">
-        <img id="logo" class="weather24logo" src="assets/logo.svg" alt="logo" />
-        <a href="#" id="navigationBar"
-          ><img id="navbars" src="assets/nav.svg" alt="navbar"
-        /></a>
-        <ul class="nav-menu-list nav-menu-list-hide">
-          <li>
-            <a href="#" class="menu-hide-icon"
-              ><ion-icon class="icon-color" name="close-outline"></ion-icon
-            ></a>
-          </li>
-          <li class="nav-menu-li"><a href="index.html">Weather</a></li>
-          <li class="nav-menu-li">
-            <a href="air-pollution.html">Air Pollution</a>
-          </li>
-          <li class="nav-menu-li active"><a href="about.html">About us</a></li>
-          <li class="nav-menu-li"><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="#" type="image/x-icon" />
+		<title>About</title>
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/light-style.css" id="toggle-theme" />
+		<script src="script/navigation.js" defer></script>
+	</head>
+	<body>
+		<div class="page-container">
+			<nav class="navigation">
+				<img id="logo" class="weather24logo" src="assets/logo.svg" alt="logo" />
+				<a href="#" id="navigationBar"
+					><img id="navbars" src="assets/nav.svg" alt="navbar"
+				/></a>
+				<ul class="nav-menu-list nav-menu-list-hide">
+					<li>
+						<a href="#" class="menu-hide-icon"
+							><ion-icon class="icon-color" name="close-outline"></ion-icon
+						></a>
+					</li>
+					<li class="nav-menu-li"><a href="index.html">Weather</a></li>
+					<li class="nav-menu-li">
+						<a href="air-pollution.html">Air Pollution</a>
+					</li>
+					<li class="nav-menu-li active"><a href="about.html">About us</a></li>
+					<li class="nav-menu-li"><a href="contact.html">Contact us</a></li>
+				</ul>
+			</nav>
 
-      <section class="section-about">
-        <img src="assets/aboutPic.jpg" alt="people in sunset" />
-        <div>
-          <h2>We Love Weather</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-            ullam error iusto, culpa qui inventore praesentium a commodi
-            deleniti accusantium molestiae voluptatum dignissimos eos
-            necessitatibus ab sed, omnis quas dolores? <br /><br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            error eum dolorem sapiente esse deleniti nesciunt illum, sequi,
-            omnis similique dolorum, quaerat velit eaque neque! Delectus unde
-            placeat temporibus? Tempora.
-          </p>
-        </div>
-      </section>
-    </div>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img id="footerLogo" src="assets/logo.svg" alt="logo" />
-        </div>
-        <div class="socialmedia-links">
-          <a href="#"
-            ><img
-              id="instagramLogo"
-              src="assets/instagramdark.svg"
-              alt="instagramlogo"
-          /></a>
-          <a href="#"
-            ><img id="tiktokLogo" src="assets/tiktokdark.svg" alt="tiktoklogo"
-          /></a>
-          <a href="#"
-            ><img id="twitterLogo" src="assets/twitterdark.svg" alt="twitter"
-          /></a>
-        </div>
-        <div class="modes">
-          <button
-            class="dark-mode-btn button"
-            name="switch"
-            id="toggle-theme-button"
-          >
-            Dark Mode
-          </button>
-        </div>
-      </div>
-    </footer>
+			<section class="section-about display-flex">
+				<h2>We Love Weather</h2>
+				<div class="img-text">
+					<img
+						class="img-about"
+						src="assets/aboutPic.jpg"
+						alt="people in sunset"
+					/>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="script//modules/theme-toggle.js"></script>
-  </body>
+					<p>
+						<b>Luna, Sofia, Maria, Abdulla.</b> <br />Lorem ipsum dolor, sit
+						amet consectetur adipisicing elit. Impedit ullam error iusto, culpa
+						qui inventore praesentium a commodi deleniti accusantium molestiae
+						voluptatum dignissimos eos necessitatibus ab sed, omnis quas
+						dolores? <br /><br />
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+						error eum dolorem sapiente esse deleniti nesciunt illum, sequi,
+						omnis similique dolorum, quaerat velit eaque neque! Delectus unde
+						placeat temporibus? Tempora.
+					</p>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img id="footerLogo" src="assets/logo.svg" alt="logo" />
+				</div>
+				<div class="socialmedia-links">
+					<a href="#"
+						><img
+							id="instagramLogo"
+							src="assets/instagramdark.svg"
+							alt="instagramlogo"
+					/></a>
+					<a href="#"
+						><img id="tiktokLogo" src="assets/tiktokdark.svg" alt="tiktoklogo"
+					/></a>
+					<a href="#"
+						><img id="twitterLogo" src="assets/twitterdark.svg" alt="twitter"
+					/></a>
+				</div>
+				<div class="modes">
+					<button
+						class="dark-mode-btn button"
+						name="switch"
+						id="toggle-theme-button"
+					>
+						Dark Mode
+					</button>
+				</div>
+			</div>
+		</footer>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script src="script//modules/theme-toggle.js"></script>
+	</body>
 </html>
