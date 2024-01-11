@@ -18,7 +18,7 @@ The user can search for a new city by writing a new one in the search input and 
 
 The About and Contact Us page are just for display right now, they do not possess any functionality yet.
 
-Credits: 
+### Credits: 
 Maria R.
 [https://github.com/MariaRacariu]
 Luna B.
