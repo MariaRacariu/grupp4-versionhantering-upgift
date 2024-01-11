@@ -205,6 +205,22 @@ Element styles that will be in each page */
 HOME
 */
 
+/* #resultContainer {
+  background-color: #94a1bf;
+  padding: 12px 24px;
+  border-radius: 8px;
+  width: 4000px;
+} */
+
+#weatherIcon {
+  width: 64px;
+  padding-bottom: 24px;
+}
+
+#dataCity {
+  padding-bottom: 24px;
+}
+
 .section-home {
   margin-top: 100px;
 }
@@ -286,3 +302,102 @@ label {
   flex-direction: column;
   gap: 24px;
 }
+
+/* 
+////////////////////////////////
+AIR POLLUTION
+*/
+
+.display-flex-air-pollution {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 376px;
+  gap: 24px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 60%;
+  flex-wrap: wrap;
+  gap: 76px;
+  text-align: center;
+  margin-bottom: 32px; */
+}
+
+.polutionCard {
+  display: flex;
+  background: #fff;
+  /* border: solid 1px rgb(204, 204, 204); */
+  border-radius: 12px;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+  padding-right: 24px;
+  gap: 24px;
+}
+
+.polutionCard_index {
+  width: 100px;
+  height: 88px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 64px;
+  padding: 0;
+  padding-top: 12px;
+  margin: 0;
+  order: 1;
+  flex-grow: 0 0 100px;
+}
+.polutionCard p:last-child {
+  order: 2;
+  position: absolute;
+  width: 100px;
+  bottom: -8px;
+  text-align: center;
+}
+.polutionCard_city {
+  flex-grow: 1;
+  order: 3;
+}
+.polutionCard_country {
+  order: 4;
+}
+
+.polutionCard h2 {
+  order: 4;
+}
+
+.polution-1 .polutionCard_index {
+  background: #83a860;
+}
+
+.polution-2 .polutionCard_index {
+  background: #63cfa6;
+}
+
+.polution-3 .polutionCard_index {
+  background: #f9c846;
+}
+
+.polution-4 .polutionCard_index {
+  /* color: white; */
+  background: #d8895e;
+}
+
+/* .polution-4 p:last-child {
+  color: white;
+} */
+
+.polution-5 .polutionCard_index {
+  /* color: white; */
+  background: #ec8b8b;
+}
+
+/* .polution-5 p:last-child {
+  color: white;
+} */

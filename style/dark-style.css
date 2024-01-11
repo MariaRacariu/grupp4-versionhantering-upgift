@@ -60,3 +60,14 @@
 .message-text {
   border: none;
 }
+
+.polutionCard {
+  border: none;
+}
+
+.polutionCard_city,
+.polutionCard_index,
+.polutionCard p:last-child,
+.polutionCard_country {
+  color: #3d3741;
+}
