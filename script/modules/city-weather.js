@@ -4,9 +4,16 @@ export async function weatherFetch(country) {
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apikey}&units=metric`
     const response = await fetch(url)
     console.log(response);
-    const data = await response.json()
-    console.log(data);
-    return data;
+    if (response.ok) {
+        const data = await response.json()
+        console.log(data);
+        return data;
+    }
+    else if (response.status === '404') {
+        throw 'error'
+    }
+
+
 }
 
 export function displayData(fetchdata) {
@@ -18,12 +25,10 @@ export function displayData(fetchdata) {
 }
 
 export function removePrevSearchResult() {
-    // dont use a class, create an id
-    // const mainResultContainer = document.querySelector('.contentHeader');
     const mainResultContainer = document.querySelector('#contentHeader');
     mainResultContainer.innerHTML = '';
 }
 
 export function errorHandler(error) {
-
+    console.log(error);
 }
