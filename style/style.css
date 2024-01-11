@@ -77,6 +77,11 @@ ul {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		padding: 3%;
+	}
+
+	.img-about {
+		width: 100%;
 	}
 
 	.nav-menu-list-hide {
@@ -112,10 +117,11 @@ ul {
 		box-sizing: border-box;
 		gap: 24px;
 		justify-content: center;
+		padding: 3%;
 	}
 
 	.img-about {
-		width: 250px;
+		width: 45%;
 	}
 
 	.footer-content {
@@ -226,24 +232,3 @@ HOME
 .dataContent {
 	margin-top: 32px;
 }
-
-/* ABOUT*/
-/* .section-about {
-	box-sizing: border-box;
-	display: flex;
-	justify-content: space-evenly;
-	padding: 24px;
-	gap: 32px;
-} */
-
-/* .section-about > img {
-	width: 30%;
-}
-.section-about > div {
-	width: 30%;
-} */
-/* div > h2 {
-	margin-top: 0%;
-} */
-
-/*sofias test*/
