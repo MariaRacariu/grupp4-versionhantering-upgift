@@ -3,32 +3,31 @@ export async function weatherFetch(country) {
     const apikey = '0c3cc91b87e044a264bca95e28a9e445'
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apikey}&units=metric`
     const response = await fetch(url)
-    console.log(response);
     if (response.ok) {
         const data = await response.json()
-        console.log(data);
         return data;
     }
-    else if (response.status === '404') {
-        throw 'error'
-    }
+    else if (response.status === 404) throw 'not found'
+
+    else throw 'error'
+
 
 
 }
-// Javascript Math.round() to round up the weather / tofixed()
 export function displayData(fetchdata) {
     const cityEl = document.querySelector('#dataCity');
     let tempratureEl = document.querySelector('#dataTemparature');
     cityEl.innerText = fetchdata.name;
-    tempratureEl.innerHTML = `${fetchdata.main.temp}&#8451`;
+    tempratureEl.innerHTML = `${fetchdata.main.temp.toFixed()}.&#8451`;
 
 }
-
-export function removePrevSearchResult() {
-    const mainResultContainer = document.querySelector('#contentHeader');
-    mainResultContainer.innerHTML = '';
-}
-
 export function errorHandler(error) {
-    console.log(error);
+    let message;
+    if (error === 'not found') message = 'City not found'
+    else message = 'something went wrong...try again later'
+
+    const errorMsgEl = document.querySelector('#errorMsg')
+
+    errorMsgEl.innerText = message;
+
 }
