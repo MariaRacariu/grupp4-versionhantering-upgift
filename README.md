@@ -19,7 +19,7 @@ The user can search for a new city by writing a new one in the search input and 
 The About and Contact Us page are just for display right now, they do not possess any functionality yet.
 
 ### Credits: 
-*Maria R. [https://github.com/MariaRacariu]
-*Luna B.[https://github.com/lunayr]
-*Sofia W.[https://github.com/SofiaEW]
-*Abdulla J.[https://github.com/SweepCodes]
+1. Maria R. [https://github.com/MariaRacariu]
+2. Luna B.[https://github.com/lunayr]
+3. Sofia W.[https://github.com/SofiaEW]
+4. Abdulla J.[https://github.com/SweepCodes]
