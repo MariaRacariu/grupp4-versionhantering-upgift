@@ -32,9 +32,6 @@ export function errorHandler(error) {
     let message;
     if (error === 'not found') message = 'City not found'
     else message = 'something went wrong...try again later'
-
-
-
     errorMsgEl.innerText = message;
 
 }
