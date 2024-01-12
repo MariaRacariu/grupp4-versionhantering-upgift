@@ -9,7 +9,6 @@ export async function weatherFetch(country) {
     if (response.ok) {
         errorMsgEl.innerHTML = "";
         const data = await response.json();
-        console.log(data);
         return data;
     }
     else if (response.status === 404) throw 'not found'
@@ -33,9 +32,6 @@ export function errorHandler(error) {
     let message;
     if (error === 'not found') message = 'City not found'
     else message = 'something went wrong...try again later'
-
-
-
     errorMsgEl.innerText = message;
 
 }

@@ -58,3 +58,14 @@
     background-color: #94aede;
   }
 }
+
+.input-name,
+.input-mail,
+.message-text {
+  border: 1px solid #9f9f9f;
+}
+
+
+.polutionCard {
+  border: solid 1px rgb(204, 204, 204);
+}
