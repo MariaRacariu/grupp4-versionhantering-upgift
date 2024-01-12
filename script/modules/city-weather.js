@@ -9,6 +9,7 @@ export async function weatherFetch(country) {
     if (response.ok) {
         errorMsgEl.innerHTML = "";
         const data = await response.json();
+        console.log(data);
         return data;
     }
     else if (response.status === 404) throw 'not found'
@@ -19,11 +20,15 @@ export function displayData(fetchdata) {
     const cityEl = document.querySelector('#dataCity');
     let tempratureEl = document.querySelector('#dataTemparature');
     const iconEl = document.querySelector('#weatherIcon');
+    const feelEl = document.querySelector('#feelslike-el');
+
+    feelEl.innerHTML = `Feels like: ${fetchdata.main.feels_like.toFixed()} &#8451`
+
     cityEl.innerText = fetchdata.name;
     tempratureEl.innerHTML = `${fetchdata.main.temp.toFixed()} &#8451`;
     for (const value of fetchdata.weather) {
         const icon = value.icon;
-        iconEl.src = `https://openweathermap.org/img/wn/${icon}.png`
+        iconEl.src = `https://openweathermap.org/img/wn/${icon}.png`;
     }
 
 
