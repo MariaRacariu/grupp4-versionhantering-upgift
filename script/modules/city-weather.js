@@ -3,7 +3,7 @@ const errorMsgEl = document.querySelector('#errorMsg')
 
 export async function weatherFetch(country) {
 
-    const apikey = '0c3cc91b87e044a264bca95e28a9e445';
+    const apikey = '';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${country}&appid=${apikey}&units=metric`;
     const response = await fetch(url);
     if (response.ok) {
